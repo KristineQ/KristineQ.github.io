@@ -1,8 +1,8 @@
 ﻿# Header-菜单
 menu:
-  Home: /
-  design: /tags/design/
-  Architecture: /tags/Architecture/
+  主页: /
+  笔记: /categories/笔记
+  # Architecture: /categories/Architecture
 
 # subNav-子导航
 subNav:
@@ -14,13 +14,13 @@ subNav:
   # - blog: "#"
   # - csdn: "#"
   # - rss: "#"
-  - zhihu: "https://www.zhihu.com/people/zuo-qi-shi-san"
+  # - zhihu: "https://www.zhihu.com/people/zuo-qi-shi-san"
   # - qq: "img/2434387555.jpg"
   # - weixin: "img/weixin_.png"
   # - weibo: "#"
   # - douban: "#"
   # - segmentfault: "#"
-  - bilibili: "https://space.bilibili.com/355604930"
+  # - bilibili: "https://space.bilibili.com/355604930"
   # - acfun: "#"
   - mail: "mailto:zuoqishisan@icloud.com"
   # - facebook: "#"
@@ -162,7 +162,7 @@ github:
 # 页脚 Litten(此配置项已弃用)
 # 帮助我们让更多人可以更方便使用Hexo，请尽量不要修改此主题配置
 pageFooter:
-  litten: Theme:<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus" target="_blank">yilia-plus</a>
+  litten: yilia-plus
 
 # 开启百度站长平台自动推送(https://ziyuan.baidu.com/linksubmit/index)
 baidu_push: false
@@ -240,14 +240,15 @@ live2d:
 style:
   # 头像上面的背景颜色
   # header: '#D3D1DC'
-  header: "#03396c"
+  # header: "#03396c"
+  backgroundImg: /statics/banner.jpeg
   gif:
     # 是否启用左侧边栏动态图效果
     enable: false
     # 自定义背景图路径(默认可以不设置，提供默认背景图)
     # path: /img/biubiubiu.gif
   # 右滑板块背景
-  slider: "linear-gradient(0.25turn, #011f4b, #ffffff, #ffffff);"
+  slider: "#224386"
 
 # slider的设置
 slider:
@@ -260,9 +261,9 @@ slider:
 #smart_menu:
 #  friends: false
 smart_menu:
-  innerArchive: "all"
-  friends: "links"
-  aboutme: "about me"
+  innerArchive: "Tags"
+  friends: false
+  aboutme: "About"
 
 # 友情链接
 friends:
@@ -273,8 +274,6 @@ friends:
     img: https://zhousiwei.gitee.io/ibooks/favicon.ico
     #网站简介(可忽略不写)
     description: 记录工作和学习过程中的笔记：Java、前端开发、Hexo博客、聚合支付、Linux笔记、ElasticSearch、ELK日志分析
-  GitHub:
-    url: https://github.com/JoeyBling
 
 # 关于我
 aboutme: 眼见风云千墙<br>时间变幻<br><br>做出选择的那一天<br>在日记上 , 相当的沉闷和平凡<br><br>当时以为<br>不过是生命中再平凡不过的一天<br><br>命运啊 , 说是注定<br>不如说是<br>忘了是在何时做了选择..

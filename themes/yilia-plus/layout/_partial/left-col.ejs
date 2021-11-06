@@ -1,14 +1,15 @@
 <% var defaultBg = '#4d4d4d'; %>
 <% var defaultBgImg = '/img/biubiubiu.gif'; %>
 <% var overlayBgImg= theme.style.gif && theme.style.gif.enable && theme.style.gif.path ? theme.style.gif.path : defaultBgImg; %>
-<div class="overlay" style="background: <%= theme.style && theme.style.header ? theme.style.header : defaultBg %>;<% if (theme.style.gif && theme.style.gif.enable){ %>background: url('<%- url_for(overlayBgImg) %>') no-repeat ;<%}%>"></div>
+<!-- <div class="overlay" style="background: <%= theme.style && theme.style.header ? theme.style.header : defaultBg %>;<% if (theme.style.gif && theme.style.gif.enable){ %>background: url('<%- url_for(overlayBgImg) %>') no-repeat ;<%}%>"></div> -->
+<div class="overlay" style="<% if (theme.style && theme.style.backgroundImg){ %>background: url('<%- url_for(theme.style.backgroundImg) %>') no-repeat; background-size: cover;<%}%>" ></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
-		<a href="<%- url_for('/') %>" class="profilepic">
+		<div class="profilepic">
 			<img src="<%- url_for(theme.avatar) %>" class="js-avatar">
-		</a>
+		</div>
 		<hgroup>
-			<h1 class="header-author"><a href="<%- url_for('/') %>"><%= config.author %></a></h1>
+			<h1 class="header-author"><%= config.author %></h1>
 		</hgroup>
 		<% if (config.subtitle) { %>
 		<p class="header-subtitle"><%= config.subtitle %></p>

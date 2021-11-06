@@ -348,6 +348,8 @@ body,
 
   .footer-left {
     /* 默认 */
+    color: white;
+    text-shadow: none;
     float: initial;
     margin-bottom: 10px;
   }
@@ -378,6 +380,7 @@ body,
     padding: 10px 0 0 0;
 
     .profilepic {
+      cursor: default;
       display: block;
       position: relative;
       z-index: 100;
@@ -447,7 +450,7 @@ body,
       color: #a0a0a0;
 
       &.active {
-        color: #eaeaea;
+        color: #224386;
         background: #a0a0a0;
       }
     }

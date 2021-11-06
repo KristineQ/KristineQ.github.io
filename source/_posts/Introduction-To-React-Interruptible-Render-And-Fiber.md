@@ -1,7 +1,11 @@
 ---
-title: Introduction To React Interruptible Render And Fiber
+title: React可中断渲染和Fiber
 date: 2021-11-04 09:42:01
 updated: 2021-11-04 09:42:01
+categories:
+  - '笔记'
+tags:
+  - 'React'
 ---
 
 那么我们从`render()`开始。
