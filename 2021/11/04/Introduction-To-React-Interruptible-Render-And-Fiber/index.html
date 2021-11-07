@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://kristineq.github.io">
-  <title>React可中断渲染和Fiber | 七渡浔</title>
+  <title>React可中断渲染和Fiber理解 | 七渡浔</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   <meta name="description" content="那么我们从render()开始。 早版本 React 的 render 函数，首先把 react element 解析成真正的 dom，然后用document.appendChild(dom)的方式，挂载到父节点上，也是 React 之前被诟病的低性能的设计：渲染一旦开始就无法停止，直到渲染了完整的 dom 树，可能会阻塞主线程很久，如果浏览器需要做高优先级的事情，比如处理用户输入或保持动画流畅，">
 <meta property="og:type" content="article">
-<meta property="og:title" content="React可中断渲染和Fiber">
+<meta property="og:title" content="React可中断渲染和Fiber理解">
 <meta property="og:url" content="https://kristineq.github.io/2021/11/04/Introduction-To-React-Interruptible-Render-And-Fiber/">
 <meta property="og:site_name" content="七渡浔">
 <meta property="og:description" content="那么我们从render()开始。 早版本 React 的 render 函数，首先把 react element 解析成真正的 dom，然后用document.appendChild(dom)的方式，挂载到父节点上，也是 React 之前被诟病的低性能的设计：渲染一旦开始就无法停止，直到渲染了完整的 dom 树，可能会阻塞主线程很久，如果浏览器需要做高优先级的事情，比如处理用户输入或保持动画流畅，">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://kristineq.github.io/statics/fiber-construct.png">
 <meta property="article:published_time" content="2021-11-04T01:42:01.000Z">
-<meta property="article:modified_time" content="2021-11-04T01:42:01.000Z">
+<meta property="article:modified_time" content="2021-11-07T11:16:23.000Z">
 <meta property="article:author" content="七渡浔">
 <meta property="article:tag" content="React">
 <meta name="twitter:card" content="summary">
@@ -201,7 +201,7 @@
   
   
     <h1 class="article-title" itemprop="name">
-      React可中断渲染和Fiber
+      React可中断渲染和Fiber理解
     </h1>
   
 
@@ -311,7 +311,7 @@
         </li>
         <li>
           <strong>本文链接：</strong>
-          <a href="https://kristineq.github.io/2021/11/04/Introduction-To-React-Interruptible-Render-And-Fiber/" title="React可中断渲染和Fiber" target="_blank">https://kristineq.github.io/2021/11/04/Introduction-To-React-Interruptible-Render-And-Fiber/</a>
+          <a href="https://kristineq.github.io/2021/11/04/Introduction-To-React-Interruptible-Render-And-Fiber/" title="React可中断渲染和Fiber理解" target="_blank">https://kristineq.github.io/2021/11/04/Introduction-To-React-Interruptible-Render-And-Fiber/</a>
         </li>
         
         <li>
